@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/textAlchemy/static/css/main.8ec9c7d8.css",
+    "main.js": "/textAlchemy/static/js/main.4e0740b9.js",
+    "static/js/453.ed3810f9.chunk.js": "/textAlchemy/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/textAlchemy/index.html",
+    "main.8ec9c7d8.css.map": "/textAlchemy/static/css/main.8ec9c7d8.css.map",
+    "main.4e0740b9.js.map": "/textAlchemy/static/js/main.4e0740b9.js.map",
+    "453.ed3810f9.chunk.js.map": "/textAlchemy/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ec9c7d8.css",
+    "static/js/main.4e0740b9.js"
+  ]
+}
