@@ -1,47 +1,41 @@
 import React from 'react'
-
-export default function About() {
+import './About.css'
+export default function About(props) {
     return (
-        <div className="container">
-            <h2 className="my-3">About Us</h2>
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Accordion Item #1
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Accordion Item #2
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <>  
+        <div class="container"style={{ backgroundColor: props.mode === 'dark' ? 'grey' : 'white',color: props.mode === 'dark' ? 'white' : 'black'}}>
+        <header>
+            <h1>About TextAlchemy</h1>
+        </header>
+        <section style={{ backgroundColor: props.mode === 'dark' ? 'grey' : 'white',color: props.mode === 'dark' ? 'white' : 'black'}}>
+            <h2>Our Mission</h2>
+            <p>At TextAlchemy, we are committed to revolutionizing the way you handle text. Our mission is to provide innovative, user-friendly tools that simplify complex text manipulation tasks, making them accessible to everyone.</p>
+        </section>
+        <section style={{ backgroundColor: props.mode === 'dark' ? 'grey' : 'white',color: props.mode === 'dark' ? 'white' : 'black'}}>
+            <h2>What We Offer</h2>
+            <ul>
+                <li><strong>Text Formatting:</strong> Effortlessly format text into headings, paragraphs, lists, and more.</li>
+                <li><strong>Data Transformation:</strong> Decode, encode, and transform data formats such as JSON, XML, CSV, and more.</li>
+                <li><strong>Snippet Generation:</strong> Generate code snippets, lorem ipsum text, and customizable templates quickly and efficiently.</li>
+            </ul>
+        </section>
+        <section style={{ backgroundColor: props.mode === 'dark' ? 'grey' : 'white',color: props.mode === 'dark' ? 'white' : 'black'}}>
+            <h2>Why Choose TextAlchemy?</h2>
+            <ul>
+                <li>User-Centric Design: Our intuitive interface ensures a seamless user experience, allowing you to achieve desired results in seconds.</li>
+                <li>Reliable Performance: Trust TextAlchemy for consistent, reliable performance in handling text processing tasks.</li>
+                <li>Innovative Solutions: Stay ahead with our continuous updates and new features designed to meet evolving text manipulation needs.</li>
+            </ul>
+        </section>
+        <section style={{ backgroundColor: props.mode === 'dark' ? 'grey' : 'white',color: props.mode === 'dark' ? 'white' : 'black'}}>
+            <h2>Open Source Commitment</h2>
+            <p>TextAlchemy is committed to transparency and collaboration. We believe in the power of open source software to foster innovation and community-driven development. That's why we provide access to the source code of our tools, encouraging developers to contribute, customize, and improve TextAlchemy for everyone.</p>
+        </section>
+        <section style={{ backgroundColor: props.mode === 'dark' ? 'grey' : 'white',color: props.mode === 'dark' ? 'white' : 'black'}}>
+            <h2>Get Started Today</h2>
+            <p>Join thousands of satisfied users who rely on TextAlchemy for their text manipulation needs. Discover the power of efficient text processing – explore our tools and transform the way you work with text.</p>
+        </section>
+    </div>
+    </>
     )
 }
