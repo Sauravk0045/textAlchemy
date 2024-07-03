@@ -55,7 +55,7 @@ function App() {
 <Navbar mode={mode} toggleMode={toggleMode}/>
 <Alert alert={alert}/>
 <div className="container my-3">
-<TextForm showAlert={showAlert} heading="Enter your text to analyze below" mode={mode}/>
+
 {/* <Routes>
           <Route exact path="/About" element={<About mode={mode}/>} >
           </Route>
